@@ -1,0 +1,39 @@
+//class definitions 
+public class Octopus
+{
+    public string Name { get; }
+    public int Age { get; set; } = 10;
+    public int Legs { get; } = 8;
+
+    public Octopus(string name)
+    {
+        Name = name;
+    }
+}
+
+//Object creation and Initialization 
+Octopus octopus = new Octopus("Jack");
+Console.WriteLine($"Name: {octopus.Name}, Age: {octopus.Age}, Legs: {octopus.Legs}");
+
+
+//Here i covered some concepts that were in the module
+// Define the Octopus class with properties
+public class Octopus
+{
+    public string Name { get; }
+    public int Age { get; set; } = 10;
+    public int Legs { get; } = 8;
+
+    // Constructor initializing the read-only Name property
+    public Octopus(string name)
+    {
+        Name = name;
+    }
+}
+
+// Main method to create an instance and display its properties
+public static void Main(string[] args)
+{
+    Octopus octopus = new Octopus("Jack");
+    Console.WriteLine($"Name: {octopus.Name}, Age: {octopus.Age}, Legs: {octopus.Legs}");
+}
